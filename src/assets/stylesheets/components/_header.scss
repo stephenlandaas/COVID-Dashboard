@@ -1,0 +1,64 @@
+header {
+  width: 100%;
+  color: #936afa;
+  background-color: #080808;
+  justify-content: center;
+  display: flex;
+  font-family: sans-serif;
+
+  ul,
+  li,
+  a {
+    display: flex;
+    align-items: center;
+  }
+
+  ul {
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: #936afa;
+    text-decoration: none;
+    padding: 0 0.5em;
+  }
+
+  p {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+  }
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  height: 2.5em;
+  line-height: 2.5em;
+  width: 95%;
+}
+
+.teamName {
+  font-size: 1.5rem;
+}
+
+.headerContent li:hover {
+  text-decoration: underline;
+}
+
+.virLogo {
+  animation: spin linear 10s infinite;
+  font-size: 1.6rem;
+}
+
+.teamName:hover, .teamName:focus {
+  filter: brightness(0.9);
+}
+
+@keyframes spin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
